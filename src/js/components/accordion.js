@@ -18,7 +18,6 @@
 
         defaults: {
             showfirst  : true,
-            opentab    : 0,
             collapse   : true,
             animate    : true,
             easing     : 'swing',
@@ -61,12 +60,8 @@
 
             this.update();
 
-            if (this.options.opentab === 0) {
-                if (this.options.showfirst) {
-                    this.toggleItem(this.toggle.eq(0).data('wrapper'), false, false);
-                }
-            } else {
-                this.toggleItem(this.toggle.eq(1).data('wrapper'), false, false);
+            if (this.options.showfirst) {
+                this.toggleItem(this.toggle.eq(0).data('wrapper'), false, false);
             }
         },
 
