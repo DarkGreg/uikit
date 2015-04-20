@@ -600,14 +600,16 @@ select.uk-form-width-mini { width: (@form-mini-width + 25px); }
     pointer-events: none;
 }
 
-.uk-form-icon:not(.uk-form-icon-flip) > input { padding-left: @form-icon-width !important; }
+.uk-form-icon:not(.uk-form-icon-flip) > input,
+.uk-form-icon:not(.uk-form-icon-flip) > select { padding-left: @form-icon-width !important; }
 
 /*
  * Sub-modifier: `uk-form-icon-flip`
  */
 
 .uk-form-icon-flip > [class*='uk-icon-'] { right: 0; }
-.uk-form-icon-flip > input { padding-right: @form-icon-width !important; }
+.uk-form-icon-flip > input,
+.uk-form-icon-flip > select { padding-right: @form-icon-width !important; }
 
 
 // Hooks
